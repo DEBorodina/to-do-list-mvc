@@ -19,8 +19,8 @@ tasks:
 complited & in progress
 
 card:
--.close button
--.name
+-close button
+-name
 -description
 -time
 -checkbox
