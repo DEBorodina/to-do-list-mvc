@@ -11,9 +11,9 @@ name:
 todo list
 
 buttons:
--add
--delete all
--delete last task
+- add
+- delete all
+- delete last task
 
 tasks:
 complited & in progress
