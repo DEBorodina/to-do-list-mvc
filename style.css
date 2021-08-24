@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap");
+
+body {
+  background: linear-gradient(235deg, #63195d, #35065f) fixed;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*HEADER============================================================================================================================*/
+
+.header{
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:90%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  backdrop-filter: blur(21px) saturate(150%);
+  background-color: rgba(53, 36, 54, 0.082);
+  border-radius: 20px;
+  border: 1px solid rgb(118, 81, 134);
+  box-shadow: 4px 4px 57px 27px rgba(4, 12, 19, 0.021);
+}
+
+.header__title{
+  text-transform: uppercase;
+  font-size: 46px;
+}
+
+.header__buttons{
+  display: flex;
+  justify-content: space-between;
+  width:32%;
+  min-width:260px;
+}
+
+.header__button{
+  display: inline-block;
+  width: 90px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: #ff7179;
+  box-shadow: 0px 0px 15px 7px rgba(255, 113, 121, 0.2);
+}
+
+.header__button:hover{
+  box-shadow: 0px 0px 20px 3px rgba(216, 139, 143, 0.596);
+  transition: .1s;
+}
+
+.header__button:active{
+  background-color: #e76269;
+  transition: .1s;
+}
+
+.header__content{
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__description{
+  margin-right: 70px;
+}
+
+.header__text{
+  color:#ffd337;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+/*DIAGRAM=============================================================================================================================*/
+
+.diagram__completed{
+  fill:none;
+  stroke:#ffd337;
+  stroke-width: 20px;
+  stroke-linecap: round;
+}
+
+.diagram__inprogress{
+  fill:none;
+  stroke:#39155b45;
+  stroke-width: 20px;
+  stroke-linecap: round;
+}
+
+.diagram__text{
+  fill:#ffd337;
+  font-size: 26px;
+  font-weight: 300;
+}
+
+/*TODOLIST============================================================================================================================*/
+
+.to-do-list{
+  width:90%;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3%;
+}
+
+/*CARD================================================================================================================================*/
+
+.card {
+  position: relative;
+  margin-bottom: 40px;
+  padding: 20px;
+  min-height: 220px;
+  min-width: 250px;
+  backdrop-filter: blur(13px) saturate(180%);
+  background-color: rgba(122, 102, 131, 0.61);
+  border-radius: 12px;
+  border: 1px solid rgba(230, 190, 230, 0.815);
+  border-radius: 20px;
+  box-shadow: 4px 4px 57px 27px rgba(4, 12, 19, 0.021);
+}
+
+.card:hover {
+  box-shadow: 0px 0px 20px 5px rgba(106, 86, 116, 0.432);
+  transition: .2s;
+}
+
+.card__content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card__delete-button{
+  position: absolute;
+  top:10px;
+  right:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: #ff7179;
+  box-shadow: 0px 0px 10px 2px rgba(107, 61, 107, 0.486);
+  border-radius: 50%;
+}
+
+.card__delete-button:hover{
+  box-shadow: 0px 0px 10px 3px rgba(216, 139, 143, 0.418);
+  transition: .1s;
+}
+
+.card__delete-button:active{
+  background-color: #e76269;
+  transition: .1s;
+}
+
+.card__delete-icon{
+  width: 22px;
+  height: 22px;
+}
+
+.card__title{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.card__time{
+  font-size: 20px;
+}
+
+.card__text{
+  font-size: 14px;
+  font-weight: 300;
+  min-height: 40px;
+  margin-bottom: 10px;
+}
+
+.label{
+  height: 30px;
+}
+
+.card__checkbox{
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.checkbox__text {
+	position: relative;
+	cursor: pointer;
+}
+
+.checkbox__text::before {
+	content: '';
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #ffffff;
+  box-shadow: 0px 0px 10px 2px rgba(107, 61, 107, 0.486);
+}
+
+.card__checkbox:checked + .checkbox__text:before {
+	background: url(white-checkmark.png) no-repeat center #ffd337;
+  background-size: 30px 30px;
+  box-shadow: 0px 0px 10px 2px #ffd4373d;
+  transition: .2s;
+}
+
+/*MODAL==============================================================================================================================*/
+
+.modal{
+  background: linear-gradient(235deg, #802378, #30065f) fixed;
+  border-radius: 12px;
+  border: 1px solid rgb(136, 33, 165);
+}
+
+.modal__input{
+  width: 90%;
+  height: 35px;
+  padding-left: 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  background: rgba(168, 135, 184, 0.61);
+  border: 1px solid rgba(230, 190, 230, 0.815);
+  outline: none;
+}
+
+.modal__input::placeholder{
+  color:white;
+}
+
+.modal__buttons{
+  margin:0 auto;
+  margin-top: 20px;
+  width:90%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1025px) {
+  .header__content{
+    flex-direction: column;
+  }
+  .header__description{
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .header__button{
+    width: 80px;
+  }
+  .to-do-list{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    margin-bottom: 100px;
+  }
+}
