@@ -148,7 +148,7 @@ body {
   justify-content: center;
   width: 35px;
   height: 35px;
-  background:url(/icons/white-trash-icon.png) no-repeat center #ff7179;
+  background:url(icons/white-trash-icon.png) no-repeat center #ff7179;
   background-size: 22px, 22px;
   box-shadow: 0px 0px 10px 2px rgba(107, 61, 107, 0.486);
   border-radius: 50%;
@@ -206,7 +206,7 @@ body {
 }
 
 .card__checkbox:checked + .checkbox__text:before {
-  background: url(/icons/white-checkmark.png) no-repeat center #ffd337;
+  background: url(icons/white-checkmark.png) no-repeat center #ffd337;
   background-size: 30px 30px;
   box-shadow: 0px 0px 10px 2px #ffd4373d;
   transition: 0.2s;
