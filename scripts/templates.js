@@ -63,7 +63,7 @@ function card(todo,i){
   return`
   <div class="card">
     <div class="card__content">
-      <button class="card__delete-button" id="delete-button-${i}"><img class="card__delete-icon" src="/icons/white-trash-icon.png"></button>
+      <button class="card__delete-button" id="delete-button-${i}"><img class="card__delete-icon" src="../icons/white-trash-icon.png"></button>
       <h1 class="card__title">${todo.title}</h1>
       <h2 class="card__time">${todo.time}</h2>
       <p class="card__text">${todo.text}</p>
