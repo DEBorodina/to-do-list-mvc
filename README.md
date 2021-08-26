@@ -1,4 +1,4 @@
-# Todo list :heavy_check_mark:
+# Todo list :white_check_mark:
 
 ### DESCRIPTION
 
