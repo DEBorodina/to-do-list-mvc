@@ -1,26 +1,20 @@
-# To do list :heavy_check_mark:
+# Todo list :heavy_check_mark:
+
+### DESCRIPTION
+
+A simple todo list for structuring your notes. The functions of creating and deleting a note, deleting all notes are provided. Adapted for mobile devices and tablets.
+
+### TOOLS AND FEATURES
+- MVC pattern
+- Tailwind
+- Grid, flexbox
+- SVG
+- Google fonts
+- JavaScript modules
+- usage of LocalStorage
+- Date()
+
+
+### DEMO
 
 [Watch](https://deborodina.github.io/to-do-list-mvc/)
-
-- description of the project
-- list of technologies (pattern mvc etc.)
-
-<b>header:</b>
-
-name:
-todo list
-
-buttons:
-- add
-- delete all
-- delete last task
-
-tasks:
-complited & in progress
-
-card:
-- close button
-- name
-- description
-- time
-- checkbox
