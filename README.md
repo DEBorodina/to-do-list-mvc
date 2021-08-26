@@ -1,4 +1,4 @@
-# to-do-list-mvc
+# To do list :heavy_check_mark:
 
 [Watch](https://deborodina.github.io/to-do-list-mvc/)
 
